@@ -1,0 +1,29 @@
+{
+    "__ref__": "https://github.com/microsoft/pyright/blob/master/docs/configuration.md",
+    "exclude": [
+        "src/generated",
+        "**/node_modules",
+        "**/__pycache__",
+        "**/typestubs",
+        "**/package*",
+        "**/test*",
+        "**/venv*"
+    ],
+
+    "stubPath": "typestubs",
+    "venvPath": ".",
+
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": false,
+    "reportOptionalMemberAccess": false,
+    "reportOptionalSubscript": false,
+
+    "pythonVersion": "3.10",
+    "executionEnvironments": [
+        {
+            "root": ".",
+            "pythonVersion": "3.10",
+            "venv": "venv"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+FROM node:lts-bullseye as node
+
+FROM python:3.10
+
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules/
+COPY --from=node /usr/local/bin/node /usr/local/bin/
+RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm
+# TODO remove revision pin with fixing firestore pyright issue
+RUN npm install -g pyright
+
+WORKDIR /app
+COPY test-requirements.txt /app
+RUN pip install -r test-requirements.txt 
+
+COPY requirements.txt /app
+RUN pip install -r requirements.txt 
+
+COPY . /app

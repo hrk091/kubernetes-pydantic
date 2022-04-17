@@ -1,0 +1,19 @@
+[tool.black]
+line-length = 120
+include = '\.pyi?$'
+exclude = '''
+/(
+  src/generated
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | venv
+)/
+'''
+
+[tool.pytest.ini_options]
+# addopts = '--cov-branch --cov-report term-missing --cov'
+testpaths = ["src/"]
+python_files = ["*_test.py"]
