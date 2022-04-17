@@ -1,0 +1,9 @@
+pytest
+pytest-asyncio
+pytest-mock
+pytest-cov
+pytest-watch
+pydantic-factories
+black
+flake8
+datamodel-code-generator

@@ -8,18 +8,6 @@ from typing import Any
 
 from pydantic import BaseModel
 
-from src.generated.github.com.tektoncd.pipeline.pkg.apis.pipeline import v1beta1 as _pipelinev1beta1
-from src.generated.io.k8s.api.apps import v1 as _appsv1
-from src.generated.io.k8s.api.core import v1 as _corev1
-from src.generated.io.k8s.api.rbac import v1 as _rbacv1
-from src.generated.io.k8s.apimachinery.pkg.apis.meta import v1 as _metav1
-
-appsv1 = _appsv1
-corev1 = _corev1
-metav1 = _metav1
-rbacv1 = _rbacv1
-pipelinev1beta1 = _pipelinev1beta1
-
 
 class Model(BaseModel):
     class Config:
