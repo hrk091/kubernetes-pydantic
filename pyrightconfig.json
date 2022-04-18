@@ -1,7 +1,7 @@
 {
     "__ref__": "https://github.com/microsoft/pyright/blob/master/docs/configuration.md",
     "exclude": [
-        "src/generated",
+        "kubernetes_pydantic/generated",
         "**/node_modules",
         "**/__pycache__",
         "**/typestubs",

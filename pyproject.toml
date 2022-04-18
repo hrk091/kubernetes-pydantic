@@ -3,7 +3,7 @@ line-length = 120
 include = '\.pyi?$'
 exclude = '''
 /(
-  src/generated
+  kubernetes_pydantic/generated
   | \.git
   | \.hg
   | \.mypy_cache
@@ -15,5 +15,5 @@ exclude = '''
 
 [tool.pytest.ini_options]
 # addopts = '--cov-branch --cov-report term-missing --cov'
-testpaths = ["src/"]
+testpaths = ["kubernetes_pydantic/"]
 python_files = ["*_test.py"]

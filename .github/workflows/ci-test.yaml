@@ -22,13 +22,13 @@ jobs:
           docker run --rm k8s-pydantic pip freeze
 
       - name: Test pyright
-        run: docker run --rm k8s-pydantic pyright src
+        run: docker run --rm k8s-pydantic pyright kubernetes_pydantic
 
       - name: Test flake8
-        run: docker run --rm k8s-pydantic flake8 -v src
+        run: docker run --rm k8s-pydantic flake8 -v kubernetes_pydantic
 
       - name: Test black
-        run: docker run --rm k8s-pydantic black --check src
+        run: docker run --rm k8s-pydantic black --check kubernetes_pydantic
 
       - name: Test pytest
         run: docker run --rm k8s-pydantic pytest --cov-branch --cov-report term-missing --cov
