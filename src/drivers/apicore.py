@@ -39,6 +39,8 @@ class K8sOriginalApi:
     appsv1: K8sClient.AppsV1Api
     corev1: K8sClient.CoreV1Api
     rbacv1: K8sClient.RbacAuthorizationV1Api
+    batchv1: K8sClient.BatchV1Api
+    networkingv1: K8sClient.NetworkingV1Api
     custom: K8sClient.CustomObjectsApi
 
     def __init__(self, config: Optional[Configuration] = None, client: Optional[ApiClient] = None):
@@ -48,6 +50,8 @@ class K8sOriginalApi:
         self.appsv1 = K8sClient.AppsV1Api(self.client)
         self.corev1 = K8sClient.CoreV1Api(self.client)
         self.rbacv1 = K8sClient.RbacAuthorizationV1Api(self.client)
+        self.batchv1 = K8sClient.BatchV1Api(self.client)
+        self.networkingv1 = K8sClient.NetworkingV1Api(self.client)
         self.custom = K8sClient.CustomObjectsApi(self.client)
 
 
