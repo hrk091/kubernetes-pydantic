@@ -1,4 +1,9 @@
-from kubernetes_pydantic.drivers.appsv1 import DaemonSetApiCore, DeploymentApiCore, ReplicaSetApiCore, StatefulSetApiCore
+from kubernetes_pydantic.drivers.appsv1 import (
+    DaemonSetApiCore,
+    DeploymentApiCore,
+    ReplicaSetApiCore,
+    StatefulSetApiCore,
+)
 from kubernetes_pydantic.drivers.batchv1 import CronJobApiCore, JobApiCore
 from kubernetes_pydantic.types import batchv1
 from kubernetes_pydantic.drivers.apiwrapper import K8sWrapApi

@@ -1,4 +1,9 @@
-from kubernetes_pydantic.drivers.rbacv1 import RoleApiCore, RoleBindingApiCore, ClusterRoleApiCore, ClusterRoleBindingApiCore
+from kubernetes_pydantic.drivers.rbacv1 import (
+    RoleApiCore,
+    RoleBindingApiCore,
+    ClusterRoleApiCore,
+    ClusterRoleBindingApiCore,
+)
 from kubernetes_pydantic.types import rbacv1
 from kubernetes_pydantic.drivers.apiwrapper import K8sWrapApi
 
