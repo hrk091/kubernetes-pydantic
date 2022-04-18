@@ -1,2 +1,2 @@
 # kubernetes-pydantic
-Kubernetes Python Client wrapper for better typing leveraging Pydantic
+Kubernetes python client wrapper for better typing leveraging Pydantic

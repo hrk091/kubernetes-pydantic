@@ -2,7 +2,7 @@ CODEGEN_OPTIONS = --input-file-type auto --snake-case-field --target-python-vers
 K8S_OPENAPI_URL = https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json
 TKN_OPENAPI_URL = https://raw.githubusercontent.com/tektoncd/pipeline/main/pkg/apis/pipeline/v1beta1/swagger.json
 
-ASSETS_DIR=$(shell pwd)/build
+ASSETS_DIR=$(shell pwd)/tmp
 
 .PHONY: k8s-manifests tkn-manifests bases-codegen clean
 
