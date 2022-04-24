@@ -45,7 +45,7 @@ class K8sOriginalApi:
 
     def __init__(self, config: Optional[Configuration] = None, client: Optional[ApiClient] = None):
         self.config = config if config else k8s_config()
-        self.client = client if client else K8sClient.ApiClient(config)
+        self.client = client if client else K8sClient.ApiClient(self.config)
         # self.client = client if client else ApiClient(config)
         self.appsv1 = K8sClient.AppsV1Api(self.client)
         self.corev1 = K8sClient.CoreV1Api(self.client)
